@@ -42,46 +42,10 @@ class HomePage extends BasePage {
   static get Button_RemoveItem() {
     return cy.get('[class="btn btn_secondary btn_small btn_inventory"]')
   }
+  
   static get Button_Cart() {
     return cy.get('.shopping_cart_link')
   }
-  
-  static get Button_CartCheckout() {
-    return cy.get('[data-test="checkout"]')
-  }
-
-  static get Input_UserFirstName() {
-    return cy.get('[data-test="firstName"]')
-  }
-  static get Input_UserLastName() {
-    return cy.get('[data-test="lastName"]')
-  }
-
-  static get Input_UserPostalCode() {
-    return cy.get('[data-test="postalCode"]')
-
-  }
-
-  static get Button_PaymentContinue() {
-    return cy.get('[data-test="continue"]')
-
-  }
-  
-  static get Validate_PaymentItem() {
-    return  cy.get('.inventory_item_name')
-
-  }
-
-  static get Button_PaymentFinish() {
-    return  cy.get('[data-test="finish"]')
-
-  }
-  static get Validate_SuccessfulOrder() {
-    return  cy.get('.complete-header')
-
-  }
-  
-  
   
 }
 
